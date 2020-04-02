@@ -7,14 +7,13 @@ spring:
     restart:
       enabled: true
   jpa:
-#    show-sql: true
     database: postgresql
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:postgresql://localhost:5432/sec_db
-    username: sec_user
-    password: sec_pass
+    url: jdbc:postgresql://localhost:5432/lib_db
+    username: lib_user
+    password: lib_pass
       
 libary:
   security:
