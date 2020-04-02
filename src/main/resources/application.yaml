@@ -1,0 +1,22 @@
+
+
+spring:
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+  jpa:
+#    show-sql: true
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sec_db
+    username: sec_user
+    password: sec_pass
+      
+libary:
+  security:
+    token_key: NN6W77+9Ee+/ve+/ve+/ve+/vX3vv71j77+977+9TBXvv717Zu+/ve+/ve+/vUDvv73vv71v77+9PQV577+977+977+977+9XRvvv73vv70x0Yp777+9Ou+/ve+/vSXvv73vv70S77+9b++/vUHvv70m77+977+9MFvvv73vv73Hpg==
+    seconds_expiratiion: 86400
