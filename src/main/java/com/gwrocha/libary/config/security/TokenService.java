@@ -21,14 +21,14 @@ public class TokenService {
 	@Value("${libary.security.token_key}")
 	private String keyString;
 	
-	@Value("${libary.security.seconds_expiratiion}")
-	private Long seconds_expiratiion;
+	@Value("${libary.security.expiratiion_time}")
+	private Long expiratiionTime;
 	
 	private Key key;
 	
 	public String generateToken(String username) {
 		
-		LocalDateTime localDateTimeExpiration = LocalDateTime.now().plus(Duration.of(seconds_expiratiion, SECONDS));
+		LocalDateTime localDateTimeExpiration = LocalDateTime.now().plus(Duration.of(expiratiionTime, SECONDS));
 		Date dateExpirantion = Date.from(localDateTimeExpiration.atZone(ZoneId.systemDefault()).toInstant());
 		
 		return Jwts.builder()
