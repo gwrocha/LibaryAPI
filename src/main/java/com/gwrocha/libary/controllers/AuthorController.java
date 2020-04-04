@@ -26,8 +26,7 @@ public class AuthorController {
 	}
 	
 	@Secured("ROLE_ADMIN")
-	@DeleteMapping
-	@RequestMapping("/{id}")
+	@DeleteMapping("/{id}")
 	public void delete(@PathVariable Long id) {
 		authorRepo.deleteById(id);
 	}

@@ -27,8 +27,7 @@ public class BookController {
 	
 	
 	@Secured("ROLE_ADMIN")
-	@DeleteMapping
-	@RequestMapping("/{id}")
+	@DeleteMapping("/{id}")
 	public void delete(@PathVariable Long id) {
 		bookRepo.deleteById(id);
 	}
