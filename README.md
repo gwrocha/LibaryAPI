@@ -1,6 +1,6 @@
 # LibaryAPI
 
-Uma simples API implementando o funcionamento do Spring Security utilizando uma autenticação via token e fazendo a validação das autorizações.
+Uma simples API implementando o funcionamento do Spring Security utilizando uma autenticação via token gerado por JWT e fazendo a validação das autorizações.
 A API tem apenas uma listagem de livros e de autores
 
 ## Tecnologias utilizadas:
